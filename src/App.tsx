@@ -201,18 +201,20 @@ function HeroSection() {
         </div>
 
         {/* Stats */}
-        <div className="mt-16 grid grid-cols-3 gap-8 max-w-lg mx-auto">
+        <div className="mt-16 grid grid-cols-2 gap-8 max-w-md mx-auto">
           <div className="text-center">
-            <div className="text-3xl font-bold text-white">8+</div>
-            <div className="text-white/60 text-sm mt-1">{lang === 'en' ? 'Years Exp.' : 'Лет опыта'}</div>
+            <div className="text-2xl font-bold text-white mb-1">
+              <i className="fa-solid fa-certificate text-amber-400 mr-2"></i>
+              {lang === 'en' ? 'Certified' : 'Дипломированный'}
+            </div>
+            <div className="text-white/60 text-sm">{lang === 'en' ? 'Specialist' : 'Специалист'}</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-white">500+</div>
-            <div className="text-white/60 text-sm mt-1">{lang === 'en' ? 'Clients' : 'Клиентов'}</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-white">5.0</div>
-            <div className="text-white/60 text-sm mt-1">{lang === 'en' ? 'Rating' : 'Рейтинг'}</div>
+            <div className="text-2xl font-bold text-white mb-1">
+              <i className="fa-solid fa-heart text-amber-400 mr-2"></i>
+              {lang === 'en' ? 'Grateful' : 'Благодарные'}
+            </div>
+            <div className="text-white/60 text-sm">{lang === 'en' ? 'Clients' : 'Клиенты'}</div>
           </div>
         </div>
       </div>
@@ -327,11 +329,11 @@ function AboutSection() {
             <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-5 border border-stone-100">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center">
-                  <i className="fa-solid fa-award text-amber-600 text-xl"></i>
+                  <i className="fa-solid fa-certificate text-amber-600 text-xl"></i>
                 </div>
                 <div>
-                  <div className="font-bold text-stone-800">8+ {lang === 'en' ? 'Years' : 'Лет'}</div>
-                  <div className="text-stone-500 text-sm">{lang === 'en' ? 'Experience' : 'Опыта'}</div>
+                  <div className="font-bold text-stone-800 text-sm">{lang === 'en' ? 'Certified Specialist' : 'Дипломированный специалист'}</div>
+                  <div className="text-stone-500 text-xs">{lang === 'en' ? 'Grateful Clients' : 'Благодарные клиенты'}</div>
                 </div>
               </div>
             </div>
